@@ -1,4 +1,5 @@
 const Util = {
+  // Example
   aHelperFunction() {
     return 1;
   },

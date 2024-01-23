@@ -4,4 +4,5 @@ import { Entity1 } from '../../../../@cds-models/ServiceA';
 @EntityHandler(Entity1)
 export class Entity1Handler {
   @Inject(SRV) private readonly srv: Service;
+  // @OnRead, @BeforeRead, @AfterRead ...
 }
