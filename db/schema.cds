@@ -1,7 +1,4 @@
-using {
-  managed,
-  sap
-} from '@sap/cds/common';
+using {managed, } from '@sap/cds/common';
 
 namespace example.namespace;
 
