@@ -1,0 +1,4 @@
+# Ignore artifacts
+@cds-models
+package.json
+gen

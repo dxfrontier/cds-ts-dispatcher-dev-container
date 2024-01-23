@@ -1,0 +1,28 @@
+{
+  "extends": ["eslint:recommended", "plugin:@typescript-eslint/recommended", "standard-with-typescript", "prettier"],
+  "env": {
+    "es2022": true,
+    "node": true,
+    "jest": true,
+    "mocha": true
+  },
+  "globals": {
+    "SELECT": true,
+    "INSERT": true,
+    "UPSERT": true,
+    "UPDATE": true,
+    "DELETE": true,
+    "CREATE": true,
+    "DROP": true,
+    "CDL": true,
+    "CQL": true,
+    "CXL": true,
+    "cds": true
+  },
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint"],
+  "rules": {
+    "no-console": "off",
+    "require-atomic-updates": "off"
+  }
+}

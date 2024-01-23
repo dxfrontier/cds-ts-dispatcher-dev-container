@@ -1,0 +1,57 @@
+{
+ "name": "cds-ts-dispatcher-dev-container",
+ "version": "1.0.0",
+ "description": "A simple CAP project.",
+ "repository": "<Add your repository here>",
+ "license": "UNLICENSED",
+ "private": true,
+ "engines": {
+  "node": "^20"
+ },
+ "dependencies": {
+    "@dxfrontier/cds-ts-dispatcher": "^0.1.24",
+    "@dxfrontier/cds-ts-repository": "^0.3.6",
+    "@sap/cds": "^7.5.3",
+    "express": "^4.18.2"
+  },
+ "devDependencies": {
+  "@cap-js/cds-typer": "^0.15.0",
+  "@cap-js/sqlite": "^1.4.0",
+  "@sap/cds-dk": "^7.5.1",
+  "@types/node": "^20.11.5",
+  "@typescript-eslint/eslint-plugin": "^6.19.1",
+  "@typescript-eslint/parser": "^6.19.1",
+  "eslint": "^8.56.0",
+  "eslint-config-prettier": "^9.1.0",
+  "eslint-config-standard-with-typescript": "^43.0.1",
+  "eslint-plugin-import": "^2.29.1",
+  "eslint-plugin-n": "^16.6.2",
+  "eslint-plugin-promise": "^6.1.1",
+  "husky": "^8.0.3",
+  "jest": "^29.7.0",
+  "lint-staged": "^15.2.0",
+  "npm-run-all": "^4.1.5",
+  "prettier": "3.2.4",
+  "rimraf": "^5.0.5",
+  "ts-node": "^10.9.2",
+  "typescript": "^5.3.3"
+ },
+ "scripts": {
+  "start": "cds-ts watch",
+  "eslint:message": "echo 'Eslint started...'",
+  "eslint": "npx eslint .",
+  "eslint:fix": "npx eslint . --fix",
+  "prettier:message": "echo 'Prettier started ...'",
+  "prettier": "npx prettier . --check",
+  "prettier:fix": "npx prettier . --write",
+  "check": "run-s eslint:message eslint prettier:message prettier",
+  "fix": "run-s eslint:message eslint:fix prettier:message prettier:fix",
+  "build:cds": "echo 'STEP 1 : Build CDS' && cds build --production",
+  "build:ts": "echo 'STEP 2 : Transpile TS => JS' && tsc",
+  "build:srv:clean:ts": "echo 'Step 3: Clean TS files from srv folder' && find gen/srv/srv -type f -name '*.ts' -delete",
+  "build:production": "run-s build:cds build:ts build:srv:clean:ts"
+ },
+ "imports": {
+  "#cds-models/*": "./@cds-models/*/index.js"
+ }
+}

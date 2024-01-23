@@ -1,0 +1,58 @@
+_schema-version: '3.1'
+ID: sap-cap-project
+version: 1.0.0
+description: 'SAP CAP Project'
+
+parameters:
+  enable-parallel-deployments: true
+
+build-parameters:
+  before-all:
+    - builder: custom
+      commands:
+        - npm ci
+        - npm run fix
+        - npm run build:production
+        - npx @cap-js/cds-typer "*" --outputDirectory gen/srv/@cds-models
+
+modules:
+  - name: sap-cap-project-srv
+    type: nodejs
+    path: gen/srv
+
+    parameters:
+      buildpack: nodejs_buildpack
+      memory: 512MB
+      disk-quota: 1024M
+      # Command start
+      command: node ./node_modules/@sap/cds/bin/cds-serve.js
+
+    build-parameters:
+      builder: npm
+      ignore: ['node_modules/']
+
+    provides:
+      - name: srv-api # required by consumers of CAP services (e.g. approuter)
+        properties:
+          srv-url: ${default-url}
+
+    requires:
+      - name: sap-cap-project-db
+
+  - name: sap-cap-project-db-deployer
+    type: hdb
+    path: gen/db
+
+    parameters:
+      buildpack: nodejs_buildpack
+
+    requires:
+      - name: sap-cap-project-db
+
+resources:
+  - name: sap-cap-project-db
+    type: com.sap.xs.hdi-container
+
+    parameters:
+      service: hana
+      service-plan: hdi-shared
