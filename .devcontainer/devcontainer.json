@@ -2,7 +2,7 @@
   "name": "CDS-TS-Dispatcher TypeScript",
   "image": "mcr.microsoft.com/devcontainers/typescript-node",
   "features": {
-    "ghcr.io/devcontainers-contrib/features/curl-apt-get:1": {},
+    "ghcr.io/devcontainers-contrib/features/curl-apt-get:1": {}
   },
   "forwardPorts": [4004],
   "postCreateCommand": "bash .devcontainer/scripts/install-dependencies.sh",
@@ -71,9 +71,9 @@
         // Others
         "VisualStudioExptTeam.vscodeintellicode",
         "christian-kohler.path-intellisense",
-        "donjayamanne.python-extension-pack",
-      ],
-    },
+        "donjayamanne.python-extension-pack"
+      ]
+    }
   },
-  "remoteUser": "node",
+  "remoteUser": "node"
 }
