@@ -5,7 +5,7 @@
     "ghcr.io/devcontainers-contrib/features/curl-apt-get:1": {},
   },
   "forwardPorts": [4004],
-  "postCreateCommand": "bash .devcontainer/install-dependencies.sh",
+  "postCreateCommand": "bash .devcontainer/scripts/install-dependencies.sh",
   // Configure tool-specific properties.
   "customizations": {
     "vscode": {

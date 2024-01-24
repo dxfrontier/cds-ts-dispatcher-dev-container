@@ -31,7 +31,9 @@
     "prettier": "3.2.4",
     "rimraf": "^5.0.5",
     "ts-node": "^10.9.2",
-    "typescript": "^5.3.3"
+    "typescript": "^5.3.3",
+    "husky": "^8.0.3",
+    "lint-staged": "^15.2.0"
   },
   "scripts": {
     "start": "cds-ts watch",
@@ -46,7 +48,14 @@
     "build:cds": "echo 'STEP 1 : Build CDS' && cds build --production",
     "build:ts": "echo 'STEP 2 : Transpile TS => JS' && tsc",
     "build:srv:clean:ts": "echo 'Step 3: Clean TS files from srv folder' && find gen/srv/srv -type f -name '*.ts' -delete",
-    "build:production": "run-s build:cds build:ts build:srv:clean:ts"
+    "build:production": "run-s build:cds build:ts build:srv:clean:ts",
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "**/*.{ts, tsx}": [
+      "npm run eslint:fix",
+      "npm run prettier:fix"
+    ]
   },
   "imports": {
     "#cds-models/*": "./@cds-models/*/index.js"
