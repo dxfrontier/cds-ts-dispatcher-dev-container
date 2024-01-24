@@ -4,7 +4,7 @@ import { Entity1 } from '../../../../@cds-models/ServiceA';
 @EntityHandler(Entity1)
 export class Entity1Handler {
   @Inject(SRV) private readonly srv: Service;
-  // @OnRead, @BeforeRead, @AfterRead ...
+  // @OnRead, @BeforeRead, @AfterRead, @OnUpdate ...
 
   @AfterRead()
   public async afterRead(results: Entity1, req: TypedRequest<Entity1>): Promise<Entity1> {
