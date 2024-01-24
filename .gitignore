@@ -32,7 +32,7 @@ mta_archives/
 # .idea
 
 # @cap-js/cds-typer
-@cds-models
+# @cds-models
 
 # Deployment artifacts
 gen
