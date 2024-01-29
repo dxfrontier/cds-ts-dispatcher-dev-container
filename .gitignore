@@ -32,6 +32,8 @@ mta_archives/
 # .idea
 
 # @cap-js/cds-typer
+
+# For production line below must be uncomment.
 # @cds-models
 
 
