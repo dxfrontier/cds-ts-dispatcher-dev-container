@@ -80,6 +80,7 @@ git clone https://github.com/dxfrontier/cds-ts-dispatcher-dev-container
 2. Change GIT remote origin to your origin
 
 ```bash
+git remote remove origin
 git remote add origin https://github.com/user/YOUR_GIT_REPOSITORY.git
 git branch -M main
 git push -u origin main
