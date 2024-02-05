@@ -16,6 +16,7 @@ The `CDS-TS-Dispatcher dev container` repository contains the [CDS-TS-Dispatcher
 - `ESLint`, `Prettier`
 - `VSCode Extensions` best extensions for SAP CAP TypeScript development
 - `Cloud MTA Build tool` for building `MTA file`
+- `Cloud Foundry CLI (CF)`
 - `Git`, `Cds`, `Npm`, `Node`
 - `CDS-Typer` for building typescript entities out of `CDS files`
 - `tsconfig.json, .eslintrc, .prettierrc`, `.gitignore` - predefined properties
