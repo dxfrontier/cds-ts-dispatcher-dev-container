@@ -1,5 +1,9 @@
 {
   "extends": ["eslint:recommended", "plugin:@typescript-eslint/recommended", "standard-with-typescript", "prettier"],
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
   "env": {
     "es2022": true,
     "node": true,
@@ -23,6 +27,11 @@
   "plugins": ["@typescript-eslint"],
   "rules": {
     "no-console": "off",
-    "require-atomic-updates": "off"
+    "require-atomic-updates": "off",
+    "@typescript-eslint/no-non-null-assertion": "off",
+    "@typescript-eslint/ban-types": "off",
+    "@typescript-eslint/no-invalid-void-type": "off"
   }
 }
+
+
