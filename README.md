@@ -11,6 +11,7 @@ The `CDS-TS-Dispatcher dev container` repository contains the [CDS-TS-Dispatcher
   - `controller`
   - `service`
   - `repository`
+  - `middleware`
   - `util`
   - `test`
 - `ESLint`, `Prettier`
