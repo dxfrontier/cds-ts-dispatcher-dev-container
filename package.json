@@ -12,7 +12,7 @@
     "@sap/cds": "^7.6.4",
     "express": "^4.18.2",
     "@dxfrontier/cds-ts-dispatcher": "^1.0.3",
-    "@dxfrontier/cds-ts-repository": "^1.0.3"
+    "@dxfrontier/cds-ts-repository": "^1.0.6"
   },
   "devDependencies": {
     "@cap-js/cds-typer": "^0.16.0",
