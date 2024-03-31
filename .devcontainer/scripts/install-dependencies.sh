@@ -2,7 +2,7 @@
 
 # Install SAP dependencies
 
-npm install -g @sap/cds-dk@7.6.0
+npm install -g @sap/cds-dk
 npm install -g mbt@1.2.24
 
 # Install package.json dependencies
