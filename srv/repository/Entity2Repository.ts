@@ -1,5 +1,6 @@
 import { Repository } from '@dxfrontier/cds-ts-dispatcher';
 import { BaseRepository } from '@dxfrontier/cds-ts-repository';
+
 import { Entity2 } from '../../@cds-models/ServiceB';
 
 @Repository()

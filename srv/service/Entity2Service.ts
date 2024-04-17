@@ -1,4 +1,5 @@
-import { Inject, SRV, Service, ServiceLogic } from '@dxfrontier/cds-ts-dispatcher';
+import { Inject, Service, ServiceLogic, SRV } from '@dxfrontier/cds-ts-dispatcher';
+
 import { Entity2Repository } from '../repository/Entity2Repository';
 
 @ServiceLogic()
