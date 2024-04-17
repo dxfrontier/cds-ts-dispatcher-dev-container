@@ -1,4 +1,5 @@
-import { EntityHandler, Inject, SRV, Service, Use } from '@dxfrontier/cds-ts-dispatcher';
+import { EntityHandler, Inject, Service, SRV, Use } from '@dxfrontier/cds-ts-dispatcher';
+
 import { Entity2 } from '../../../../@cds-models/ServiceB';
 import { MiddlewareEntity2 } from '../../../middleware/MiddlewareEntity2';
 

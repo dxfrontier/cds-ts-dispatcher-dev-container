@@ -2,7 +2,7 @@
 
 # Install SAP dependencies
 
-npm install -g @sap/cds-dk
+npm install -g @sap/cds-dk typescript ts-node
 npm install -g mbt@1.2.24
 
 # Install package.json dependencies

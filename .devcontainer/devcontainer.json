@@ -1,6 +1,7 @@
 {
   "name": "CDS-TS-Dispatcher TypeScript",
   "image": "mcr.microsoft.com/devcontainers/typescript-node:20-bullseye",
+  "runArgs": ["--name", "CDS-TS-Dispatcher-dev-container"],
   "features": {
     "ghcr.io/devcontainers-contrib/features/curl-apt-get:1": {}
   },
@@ -62,7 +63,8 @@
         "streetsidesoftware.code-spell-checker",
         "wayou.vscode-todo-highlight",
         "mike-co.import-sorter",
-        
+        "VisualStudioExptTeam.vscodeintellicode",
+
         // XML & YAML
         "redhat.vscode-yaml",
         "DotJoshJohnson.xml",
@@ -81,7 +83,6 @@
         // Others
         "VisualStudioExptTeam.vscodeintellicode",
         "christian-kohler.path-intellisense",
-        "donjayamanne.python-extension-pack",
         "AykutSarac.jsoncrack-vscode"
       ]
     }
