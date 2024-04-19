@@ -93,7 +93,18 @@ git branch -M main
 git push -u origin main
 ```
 
-3. Start development as usual.
+3. Install the following npm packages
+
+```bash
+npm install -g typescript ts-node
+```
+
+4. Start development as usual.
+
+```bash
+npm start
+```
+
 <p align="right">(<a href="#table-of-contents">back to top</a>)</p>
 
 ## Contributing
