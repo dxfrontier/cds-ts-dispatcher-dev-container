@@ -1,2 +1,2 @@
-using from './controller/service-A/service-A';
-using from './controller/service-B/service-B';
+using from './controller/service-1/service-1';
+using from './controller/service-2/service-2';
