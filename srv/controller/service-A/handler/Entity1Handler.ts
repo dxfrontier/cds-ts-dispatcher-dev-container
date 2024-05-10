@@ -1,5 +1,13 @@
 import {
-    AfterRead, EntityHandler, Inject, Req, Results, Service, SRV, TypedRequest, Use
+  AfterRead,
+  EntityHandler,
+  Inject,
+  Req,
+  Results,
+  Service,
+  SRV,
+  TypedRequest,
+  Use,
 } from '@dxfrontier/cds-ts-dispatcher';
 
 import { Entity1 } from '../../../../@cds-models/ServiceA';
