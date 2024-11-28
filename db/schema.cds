@@ -6,8 +6,3 @@ entity Entity1 : managed {
   key ID    : Integer;
       descr : localized String(111);
 }
-
-entity Entity2 : managed {
-  key ID    : Integer;
-      descr : localized String(111);
-}

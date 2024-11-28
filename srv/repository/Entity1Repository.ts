@@ -1,7 +1,7 @@
 import { Repository } from '@dxfrontier/cds-ts-dispatcher';
 import { BaseRepository } from '@dxfrontier/cds-ts-repository';
 
-import { Entity1 } from '../../@cds-models/ServiceA';
+import { Entity1 } from '#cds-models/ServiceA';
 
 @Repository()
 export class Entity1Repository extends BaseRepository<Entity1> {

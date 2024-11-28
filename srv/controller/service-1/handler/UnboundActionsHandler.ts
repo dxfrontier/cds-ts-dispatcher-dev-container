@@ -1,7 +1,7 @@
-import { Inject, Service, SRV, UnboundActions } from '@dxfrontier/cds-ts-dispatcher';
+import { Inject, Service, CDS_DISPATCHER, UnboundActions } from '@dxfrontier/cds-ts-dispatcher';
 
 @UnboundActions()
 export class UnboundActionsHandler {
-  @Inject(SRV) private readonly service: Service;
+  @Inject(CDS_DISPATCHER.SRV) private readonly service: Service;
   // @OnError, @OnEvent, @OnAction, @OnFunction
 }

@@ -1,8 +1,8 @@
-const Constants = {
+const constants = {
   // Example
   CONSTANT_1: {
     PROP_CONSTANT_1: 'SOMETHING',
   },
 };
 
-export default Constants;
+export default constants;
